@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--UATSpace page for CSC102 at UAT.edu 
+    by Sebastian Terranova
+    sebterra@uat.edu
+
+    Assignment: Launching your UAT SPACE Program HTML Document Tags
+    Last Updated: 9/12/22-->
+<html>
+    <head>
+        <script src="code.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <title>
+            Sebastian Terranova's UAT Space Program
+        </title>
+    </head>
+    <body>
+        <script>
+            var docWriteText = "This is a test of the document.write function";
+            var welcomeText = ", Welcome to UAT Space!";
+            </script>
+        <img src="UATspaceLogo.jpg">
+        <h1 id="blinkText">
+            UAT Space Page
+        </h1>
+        <p>
+            Test of the paragraph tags. <br>
+            The paragraph tags are used in html to display more than one sentence. <br>
+            This can be more than one line of text. <br> <br>
+        </p>
+       <h2>Countdown Timer</h2>
+       <br>
+       <div id="countDis">Time will appear here after start is pressed</div>
+       <br>
+       <br>
+        <button onclick="countDownTimer();">
+            Start
+        </button>
+        <button>
+            Stop
+        </button>
+        <script type="text/javascript">
+            var blink = document.getElementById('blinkText');
+            setInterval(function() {
+                blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+            }, 1500);
+        </script>
+
+            
+
+        <h1>Craps Game</h1>
+        <div id="die1Res">The die 1 result will go here</div>
+        <div id="die2Res">The die 2 result will go here</div>
+        <div id="gameRes">The game result will go here</div>
+        <br>
+        <button onclick="playCraps()">Play Craps</button>
+    </body>
+</html>
